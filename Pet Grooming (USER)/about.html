@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — PetMalu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container" style="display:flex;align-items:center;gap:20px;padding:0">
+      <div class="brand">
+        <div class="logo">
+          <img src="Dogstyle.png" alt="PetMalu Logo" style="height:48px; width:auto;">
+        </div>
+        <div>
+          <div style="font-weight:700">PetMalu</div>
+          <div class="kicker">Professional grooming for dogs & cats</div>
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="booking.html">Book Now</a>
+        <a href="services.html">Services</a>
+        <a href="about.html" class="active">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div style="max-width:980px;margin:18px auto">
+      <div class="card hero-card">
+        <div class="hero" style="display:flex;gap:18px;align-items:center;flex-wrap:wrap">
+          <div style="flex:1;min-width:260px">
+            <h1 style="margin:0 0 8px">About PetMalu</h1>
+            <p class="small">
+              PetMalu is a professional grooming studio based in Leon, Iloilo. 
+              We provide gentle, high-quality grooming for dogs and cats — 
+              from baths and trims to nail care and ear cleaning. 
+              Our team prioritizes animal comfort and safety, 
+              using only veterinarian-approved products and modern equipment.
+            </p>
+
+            <ul class="small" style="margin-top:12px;line-height:1.6">
+              <li><strong>Experienced Groomers</strong> — trained in breed-specific cuts and stress-minimizing handling.</li>
+              <li><strong>Clean & Safe Space</strong> — regular sanitation, separate areas for bathing & drying.</li>
+              <li><strong>Pet-First Philosophy</strong> — low-force restraint, breaks on request, and lots of treats.</li>
+            </ul>
+
+            <div style="margin-top:14px;display:flex;gap:8px;flex-wrap:wrap">
+              <a class="btn btn-primary" href="booking.html">Book Appointment</a>
+            </div>
+          </div>
+
+          <div style="width:320px;min-width:260px">
+            <div class="card address-card">
+              <div style="font-weight:700;margin-bottom:6px">Location</div>
+              <div class="small" style="margin-bottom:8px">Bayag Sur Barangay Hall</div>
+              <div class="small">Q9HR+72J, Calaor St, Leon, 5000 Iloilo</div>
+
+              <div style="margin-top:10px;display:flex;gap:8px;align-items:center">
+                <button id="copy-pluscode" class="btn btn-sm">Copy Plus Code</button>
+                <a id="open-maps" class="btn btn-outline btn-sm" target="_blank" rel="noopener">Open in Maps</a>
+              </div>
+
+              <div style="margin-top:12px">
+                <small class="kicker">Map Preview</small>
+                <div class="map-preview" id="map-preview" title="Click to open full map">
+                  <!-- iframe inserted by JS -->
+                </div>
+                <div class="note" style="margin-top:8px">
+                  Click the preview to open Google Maps. Mobile users can open the Maps app from the link above.
+                </div>
+              </div>
+            </div>
+
+            <div class="card" style="margin-top:12px">
+              <div style="font-weight:700">Contact</div>
+              <div class="small">(+63) 912 345 6789<br/>hello@petgroom.local</div>
+            </div>
+
+            <div class="card" style="margin-top:12px">
+              <div style="font-weight:700">Opening Hours</div>
+              <div class="small">Mon–Sat: 8:00 AM – 6:00 PM<br/>Sun: Closed</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:16px">
+        <div style="font-weight:700">Why choose us</div>
+        <div class="small" style="margin-top:8px">
+          From nervous puppies to senior kitties, we adapt each session to the pet’s needs. 
+          We also offer a calming pheromone room and post-groom photos so owners can see the results.
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:16px">
+        <div style="font-weight:700">How to find us</div>
+        <ol class="small" style="margin-top:8px">
+          <li>Search the plus code <strong>Q9HR+72J</strong> in Google Maps or enter the full address.</li>
+          <li>If coming from Iloilo City, follow the Aklan–Iloilo road to Leon town proper and look for Bayag Sur Barangay Hall.</li>
+          <li>Parking is available on-site (limited slots).</li>
+        </ol>
+      </div>
+    </div>
+
+    <footer>
+      <div class="small">
+        PETMALU GROOMING STUDIO © 2025 | Privacy Policy | Website Terms | Website By Stuxz
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

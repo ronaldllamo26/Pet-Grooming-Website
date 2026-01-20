@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Admin Login — PetMalu</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <!-- Background Decorations -->
+  <div class="bg-decoration">
+    <div class="paw-print">🐾</div>
+    <div class="paw-print">🐾</div>
+    <div class="paw-print">🐾</div>
+  </div>
+
+  <div class="auth-container">
+    <div class="auth-card">
+      <div class="card-header">
+        <div class="logo-circle">
+          <span class="logo-icon">🛡️</span>
+        </div>
+        <h2>Welcome Back!</h2>
+        <p class="subtitle">Login to continue your pet grooming journey</p>
+      </div>
+
+      <form id="admin-login-form">
+        <div class="form-group">
+          <label for="admin-email">Email Address</label>
+          <input id="admin-email" type="email" placeholder="your@email.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="admin-password">Password</label>
+          <div class="password-wrapper">
+            <input id="admin-password" type="password" placeholder="Enter your password" required>
+            <span id="toggle-admin-password" class="eye-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" width="22" height="22">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M1.458 12C2.732 7.943 6.523 5 12 5c5.478 0 9.268 2.943 10.542 7-1.274 4.057-5.064 7-10.542 7-5.477 0-9.268-2.943-10.542-7z" />
+                <circle cx="12" cy="12" r="3" />
+              </svg>
+            </span>
+          </div>
+        </div>
+
+        <button class="btn btn-primary" type="submit">
+          <span>Login</span>
+          <span class="btn-icon">→</span>
+        </button>
+
+        <div class="divider"><span>or</span></div>
+
+        <div class="login-redirect">
+          <p>Don't have an account? <a href="register.html" class="login-link">Register Now</a></p>
+        </div>
+      </form>
+    </div>
+
+    <div class="side-panel">
+      <div class="side-content">
+        <div class="feature-icon">✨</div>
+        <h3>Professional Pet Grooming</h3>
+        <p>Book appointments with certified pet groomers and give your furry friends the care they deserve!</p>
+        <ul class="features">
+          <li>✔️ Easy Online Booking</li>
+          <li>✔️ Certified Groomers</li>
+          <li>✔️ Affordable Rates</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>

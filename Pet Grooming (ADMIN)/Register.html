@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Register — PetMalu</title>
+  <link rel="stylesheet" href="Register.css">
+</head>
+<body>
+
+  <div class="bg-decoration">
+    <div class="paw-print">🐾</div>
+    <div class="paw-print">🐾</div>
+    <div class="paw-print">🐾</div>
+  </div>
+
+  <div class="auth-container">
+    <div class="auth-card">
+      <div class="card-header">
+        <div class="logo-circle">
+          <span class="logo-icon">🛡️</span>
+        </div>
+        <h2>Admin Registration</h2>
+        <p class="subtitle">Create your admin account to manage the system</p>
+      </div>
+
+      <form id="register-form">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" placeholder="Your full name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="contact">Contact Number</label>
+          <input type="text" id="contact" placeholder="0917 123 4567" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="your@email.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <div class="password-wrapper">
+            <input type="password" id="password" placeholder="Enter password" required>
+            <span id="toggle-password" class="eye-icon">
+              <svg id="eye-closed" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17.94 17.94A10.97 10.97 0 0 1 12 20c-7 0-11-8-11-8a18.1 18.1 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19"></path>
+                <line x1="1" y1="1" x2="23" y2="23"></line>
+              </svg>
+              <svg id="eye-open" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
+            </span>
+          </div>
+        </div>
+
+        <button class="btn btn-primary" type="submit">
+          <span>Register</span>
+          <span class="btn-icon">→</span>
+        </button>
+
+        <div class="divider"><span>or</span></div>
+
+        <!-- ✅ Added Login Redirect -->
+        <div class="login-redirect">
+          <p>Already have an account? 
+            <a href="login.html" class="login-link">Login Here</a>
+          </p>
+        </div>
+      </form>
+    </div>
+
+    <div class="side-panel">
+      <div class="side-content">
+        <div class="feature-icon">✨</div>
+        <h3>Admin Dashboard</h3>
+        <p>Manage all pet grooming appointments, users, and services easily with your admin account.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="Register.js"></script>
+</body>
+</html>

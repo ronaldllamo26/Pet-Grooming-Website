@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --admin-primary: #6FCAC3;
+  --admin-primary-dark: #54b2ab;
+  --admin-primary-light: #8adbd5;
+  --text: #2C3E50;
+  --text-light: #ffffff;
+  --white: #FFFFFF;
+  --shadow-lg: 0 8px 32px rgba(0,0,0,0.16);
+  --bg-gradient-1: #E8F4F8;
+  --bg-gradient-2: #D4E8ED;
+}
+
+/* ===== GLOBAL ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, var(--bg-gradient-1), var(--bg-gradient-2));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* ===== BACKGROUND ===== */
+.bg-decoration {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.paw-print {
+  position: absolute;
+  font-size: 42px;
+  opacity: 0.12;
+  animation: float 25s infinite ease-in-out;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-25px); }
+}
+
+/* ===== CONTAINER ===== */
+.auth-container {
+  display: flex;
+  max-width: 950px;
+  width: 100%;
+  background: var(--white);
+  border-radius: 20px;
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+/* ===== AUTH CARD ===== */
+.auth-card {
+  flex: 1;
+  padding: 40px 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.logo-circle {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, var(--admin-primary), var(--admin-primary-light));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+  box-shadow: 0 4px 20px rgba(111, 202, 195, 0.3);
+}
+
+.logo-icon {
+  font-size: 34px;
+}
+
+.card-header h2 {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--admin-primary-dark);
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  font-size: 13px;
+  color: var(--admin-primary);
+}
+
+/* ===== FORM ===== */
+.form-group {
+  margin-bottom: 18px;
+}
+
+label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 6px;
+}
+
+input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 2px solid #e1e8ed;
+  border-radius: 10px;
+  font-size: 14px;
+  transition: 0.3s ease;
+  background: #f8fafc;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--admin-primary);
+  background: var(--white);
+  box-shadow: 0 0 0 3px rgba(111, 202, 195, 0.1);
+}
+
+.password-wrapper {
+  position: relative;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: var(--admin-primary-dark);
+  transition: 0.2s;
+}
+
+.eye-icon:hover {
+  color: var(--admin-primary);
+}
+
+/* ===== BUTTON ===== */
+.btn {
+  width: 100%;
+  padding: 13px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  background: linear-gradient(135deg, var(--admin-primary-dark), var(--admin-primary));
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+/* ===== DIVIDER ===== */
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 20px 0 16px;
+  color: var(--text);
+  font-size: 12.5px;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #e1e8ed;
+}
+
+.divider span {
+  padding: 0 14px;
+  background: var(--white);
+}
+
+/* ===== SIDE PANEL ===== */
+.side-panel {
+  flex: 1;
+  background: linear-gradient(135deg, var(--admin-primary), var(--admin-primary-dark));
+  padding: 40px 35px;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.side-content h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.side-content p {
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.features li {
+  font-size: 13.5px;
+  margin-bottom: 6px;
+}
+
+/* ===== LOGIN REDIRECT ===== */
+.login-redirect {
+  text-align: center;
+  margin-top: 6px;
+  font-size: 13.5px;
+  color: var(--text);
+}
+
+.login-redirect .login-link {
+  color: var(--admin-primary-dark);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.login-redirect .login-link:hover {
+  color: var(--admin-primary);
+  text-decoration: underline;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 968px) {
+  .side-panel { display: none; }
+  .auth-card { max-width: 440px; margin: 0 auto; }
+}
